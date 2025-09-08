@@ -367,4 +367,20 @@ footer a:hover {
         padding: 10px 25px;
         font-size: 14px;
     }
+
+    .categoria {
+        height: auto;
+        aspect-ratio: auto;
+    }
+    .categoria img {
+        object-fit: contain; 
+        position: relative;
+        height: auto;
+    }
+    .categoria-content {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }

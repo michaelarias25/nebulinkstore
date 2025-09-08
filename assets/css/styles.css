@@ -319,19 +319,38 @@ footer a:hover {
 
 /* Responsive para categorías */
 @media (max-width: 768px) {
-    .categoria {
-        height: 250px; /* Altura menor en móviles */
+    .destacado {
+        padding: 30px 20px;
     }
     
-    .categoria-content {
-        margin-top: 40px; /* Menos margen en móviles */
+    .destacado h2 {
+        font-size: 24px;
+        letter-spacing: 1px;
     }
     
-    .categoria h2 {
-        font-size: 32px; /* Texto más pequeño en móviles */
+    .productos { 
+        gap: 15px; 
     }
     
-    .categoria button {
+    .producto { 
+        width: 160px;
+        height: 260px;
+        padding: 15px;
+    }
+    
+    .producto img {
+        height: 100px;
+    }
+    
+    .producto-nombre {
+        font-size: 14px;
+    }
+    
+    .producto-precio {
+        font-size: 16px;
+    }
+    
+    .ver-mas button {
         padding: 10px 25px;
         font-size: 14px;
     }

@@ -44,7 +44,6 @@ nav a:hover {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .productos { 
@@ -61,7 +60,7 @@ nav a:hover {
     border-radius: 15px; 
     text-align: center; 
     width: 180px;
-    height: 280px; /* Altura fija para que todos sean iguales */
+    height: 210px; /* Altura fija para que todos sean iguales */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Distribuye el contenido uniformemente */

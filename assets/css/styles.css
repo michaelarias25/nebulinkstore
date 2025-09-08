@@ -33,12 +33,18 @@ nav a:hover {
 
 /* --- Destacado --- */
 .destacado { 
-    padding: 30px; 
+    padding: 40px 30px; 
     background: linear-gradient(90deg, #9333ea, #2563eb); 
 }
+
 .destacado h2 { 
-    font-size: 22px; 
-    margin-bottom: 20px; 
+    font-size: 28px; 
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .productos { 
@@ -46,35 +52,82 @@ nav a:hover {
     gap: 20px; 
     justify-content: center; 
     flex-wrap: wrap; 
+    margin-bottom: 30px;
 }
+
 .producto { 
     background: #2d1b69; 
-    padding: 15px; 
+    padding: 20px; 
     border-radius: 15px; 
     text-align: center; 
-    width: 180px; 
+    width: 180px;
+    height: 280px; /* Altura fija para que todos sean iguales */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el contenido uniformemente */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
 .producto img { 
     width: 100%; 
-    border-radius: 10px; 
+    height: 120px; /* Altura fija para las imágenes */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
-.producto p { 
-    margin: 8px 0; 
+
+.producto-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Empuja el contenido hacia abajo */
+}
+
+.producto-nombre {
+    font-weight: 700; /* Negrita para el nombre */
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.producto-precio {
+    font-size: 18px;
+    font-weight: 600;
+    color: #22c55e; /* Color verde para el precio */
+    margin: 0;
 }
 
 .ver-mas { 
     text-align: center; 
     margin-top: 20px; 
 }
+
 .ver-mas button { 
-    padding: 10px 25px; 
-    border-radius: 20px; 
+    padding: 12px 30px; 
+    border-radius: 25px; 
     border: none; 
     cursor: pointer; 
-    background: #333; color: #fff; 
+    background: #374151;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
+
 .ver-mas button:hover { 
-    background: #555; 
+    background: #4b5563;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
 /* --- Categorías --- */

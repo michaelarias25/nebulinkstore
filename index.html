@@ -1,10 +1,136 @@
 <!DOCTYPE html>
-<html lang="es"
-    <head>
-        <title>Mi primer documento</title>
-    </head>
-    <body style="background-color: rgb(166, 0, 255);">
-        <h1>Nebulink Store</h1>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nebulink Store - Inicio</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #000; color: #fff; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; background: #000; }
+    nav a { margin: 0 15px; color: #fff; text-decoration: none; font-weight: 500; }
+    nav a:hover { color: #8b5cf6; }
+    .search { background: #fff; border-radius: 20px; padding: 6px 12px; border: none; width: 250px; }
 
-    </body>
+    /* --- Destacado --- */
+    .destacado { padding: 30px; background: linear-gradient(90deg, #9333ea, #2563eb); }
+    .destacado h2 { font-size: 22px; margin-bottom: 20px; }
+    .productos { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+    .producto { background: #2d1b69; padding: 15px; border-radius: 15px; text-align: center; width: 180px; }
+    .producto img { width: 100%; border-radius: 10px; }
+    .producto p { margin: 8px 0; }
+    .ver-mas { text-align: center; margin-top: 20px; }
+    .ver-mas button { padding: 10px 25px; border-radius: 20px; border: none; cursor: pointer; background: #333; color: #fff; }
+    .ver-mas button:hover { background: #555; }
+
+    /* --- Categorías --- */
+    .categorias { display: grid; grid-template-columns: 1fr; }
+    .categoria { position: relative; height: 350px; display: flex; align-items: center; justify-content: center; }
+    .categoria img { position: absolute; width: 100%; height: 100%; object-fit: cover; filter: brightness(0.5); }
+    .categoria-content { position: relative; text-align: center; }
+    .categoria h2 { font-size: 40px; margin-bottom: 15px; }
+    .categoria button { padding: 12px 30px; border: none; border-radius: 25px; font-size: 14px; cursor: pointer; }
+
+    .xbox button { background: #22c55e; color: #fff; }
+    .playstation button { background: #3b82f6; color: #fff; }
+    .nintendo button { background: #ef4444; color: #fff; }
+
+    /* --- Footer --- */
+    footer { background: #000; display: flex; justify-content: space-around; padding: 40px; font-size: 14px; }
+    footer h4 { margin-bottom: 10px; }
+    footer p, footer a { margin: 5px 0; color: #aaa; text-decoration: none; }
+    footer a:hover { color: #fff; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div><img src="C:\Users\micha\OneDrive\Documentos\1. Universidad\4. Cuarto Semestre\Construccion de Software\nebulinkstore\Images\nebulink store logo.png" alt="Nebulink Logo" width="120"></div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="#">Consolas</a>
+      <a href="#">Videojuegos</a>
+    </nav>
+    <input class="search" type="text" placeholder="Buscar...">
+  </header>
+
+  <!-- Destacado -->
+  <section class="destacado">
+    <h2>Destacado</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="images/xbox series xx.png" alt="Xbox Series X">
+        <p>Xbox Series X</p>
+        <p>$2.999.900</p>
+      </div>
+      <div class="producto">
+        <img src="C:\Users\micha\OneDrive\Documentos\1. Universidad\4. Cuarto Semestre\Construccion de Software\nebulinkstore\Images\ps5 pro.png" alt="PlayStation 5">
+        <p>PlayStation 5</p>
+        <p>$2.799.900</p>
+      </div>
+      <div class="producto">
+        <img src="" alt="Nintendo Switch 2">
+        <p>Nintendo Switch 2</p>
+        <p>$2.499.900</p>
+      </div>
+      <div class="producto">
+        <img src="C:\Users\micha\OneDrive\Documentos\1. Universidad\4. Cuarto Semestre\Construccion de Software\nebulinkstore\Images\xbox series x.png" alt="Xbox Series S">
+        <p>Xbox Series S</p>
+        <p>$1.500.000</p>
+      </div>
+      <div class="producto">
+        <img src="C:\Users\micha\OneDrive\Documentos\1. Universidad\4. Cuarto Semestre\Construccion de Software\nebulinkstore\Images\ps4 pro.png" alt="PlayStation 4 Pro">
+        <p>PlayStation 4 Pro</p>
+        <p>$1.999.900</p>
+      </div>
+    </div>
+    <div class="ver-mas"><button>Ver más</button></div>
+  </section>
+
+  <!-- Categoría Xbox -->
+  <section class="categorias">
+    <div class="categoria xbox">
+      <img src="C:\Users\micha\OneDrive\Documentos\1. Universidad\4. Cuarto Semestre\Construccion de Software\nebulinkstore\Images\xbox mural.png" alt="Xbox Fondo">
+      <div class="categoria-content">
+        <h2>Xbox</h2>
+        <button>Ver catálogo</button>
+      </div>
+    </div>
+    <!-- Categoría PlayStation -->
+    <div class="categoria playstation">
+      <img src="C:\Users\micha\OneDrive\Documentos\1. Universidad\4. Cuarto Semestre\Construccion de Software\nebulinkstore\Images\playstation mural.png" alt="PlayStation Fondo">
+      <div class="categoria-content">
+        <h2>PlayStation</h2>
+        <button>Ver catálogo</button>
+      </div>
+    </div>
+    <!-- Categoría Nintendo -->
+    <div class="categoria nintendo">
+      <img src="C:\Users\micha\OneDrive\Documentos\1. Universidad\4. Cuarto Semestre\Construccion de Software\nebulinkstore\Images\nintendo mural.png" alt="Nintendo Fondo">
+      <div class="categoria-content">
+        <h2>Nintendo</h2>
+        <button>Ver catálogo</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <h4>Nebulink Store</h4>
+      <p>Sobre nosotros</p>
+      <p>Nuestros servicios</p>
+      <p>Políticas de privacidad</p>
+    </div>
+    <div>
+      <h4>Contáctanos</h4>
+      <p>Tel: +57 3133226068</p>
+      <p>Email: info.nebulink@gmail.com</p>
+    </div>
+    <div>
+      <h4>Síguenos</h4>
+      <p>Facebook | Instagram | X</p>
+    </div>
+  </footer>
+
+</body>
 </html>

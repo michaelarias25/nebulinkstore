@@ -100,7 +100,7 @@ nav a:hover {
 .producto-precio {
     font-size: 18px;
     font-weight: 600;
-    color: #004df2;
+    color: #27c100;
     margin: 0;
 }
 
@@ -125,7 +125,7 @@ nav a:hover {
 }
 
 .ver-mas button:hover { 
-    background: #4b5563;
+    background: #4b634d;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
@@ -228,6 +228,11 @@ footer a:hover {
     color: #fff; 
 }
 
+.redes img {
+  width: 30px;
+  margin: 0 5px;
+}
+
 /* --- CSS PARA INDEX--- */
 
 
@@ -255,7 +260,8 @@ footer a:hover {
 }
 .historia h3 {
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .historia p {
   max-width: 900px;

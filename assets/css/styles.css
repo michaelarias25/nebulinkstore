@@ -1,3 +1,4 @@
+/* --- CSS PARA INDEX--- */
 
 body { 
     margin: 0; 
@@ -227,6 +228,10 @@ footer a:hover {
     color: #fff; 
 }
 
+/* --- CSS PARA INDEX--- */
+
+
+/* --- CSS PARA SOBRE NOSOTROS--- */
 
 /* Hero */
 .hero {
@@ -317,7 +322,9 @@ footer a:hover {
   background: #555;
 }
 
-/* Responsive para categorías */
+/* --- CSS PARA INDEX--- */
+
+
 @media (max-width: 768px) {
     .destacado {
         padding: 30px 20px;

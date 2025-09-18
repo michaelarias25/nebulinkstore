@@ -329,3 +329,69 @@ footer a:hover {
 }
 
 /* --- CSS PARA SOBRE NOSOTROS --- */
+
+
+/* Estilos generales del formulario */
+.formulario_background {
+  padding: 60px 20px;
+  background: linear-gradient(90deg, #9333ea, #2563eb);
+  text-align: center;
+}
+
+.formulario-section {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.formulario-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.form_trabajaconnosotros .form-group {
+  margin-bottom: 20px;
+}
+
+.form_trabajaconnosotros label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form_trabajaconnosotros input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form_trabajaconnosotros input:focus {
+  border-color: #0078D7;
+  outline: none;
+}
+
+.btn-enviar {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #0078D7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #005fa3;
+}

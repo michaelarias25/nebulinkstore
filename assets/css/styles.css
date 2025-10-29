@@ -1,11 +1,13 @@
 /* --- CSS PARA INDEX--- */
 
+/* Reset básico y tipografía */
 body { 
     margin: 0; 
     font-family: Arial, sans-serif; 
     background: #000; color: #fff; 
 }
 
+/* Header flexible: logo + nav + buscador */
 header { 
     display: flex; 
     justify-content: space-between; 
@@ -14,6 +16,7 @@ header {
     background: #000; 
 }
 
+/* Links del menú principal */
 nav a { 
     margin: 0 15px; 
     color: #fff; 
@@ -24,6 +27,8 @@ nav a {
 nav a:hover { 
     color: #8b5cf6; 
 }
+
+/* Input de búsqueda  */
 .search { 
     background: #fff; 
     border-radius: 20px; 
@@ -55,6 +60,7 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
+/* Card de producto con hover */
 .producto { 
     background: #2d1b69; 
     padding: 20px; 

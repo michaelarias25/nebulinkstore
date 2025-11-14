@@ -38,15 +38,15 @@
                     <h1>Únete a Nuestro Equipo</h1>
                     <p class="subtitle">Buscamos personas apasionadas por el mundo gamer.</p>
                 </div>
-                <form id="contact-form" class="form-v3">
+                <form id="contact-form" class="form-v3" action="guardar_postulacion.php" method="POST">
                     <div class="form-field">
-                        <input type="text" id="nombre" placeholder="Nombre Completo">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required>
                     </div>
                     <div class="form-field">
-                        <input type="email" id="correo" placeholder="Correo Electrónico">
+                        <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required>
                     </div>
                     <div class="form-field">
-                        <input type="tel" id="telefono" placeholder="Teléfono">
+                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
                     </div>
                     <button type="submit" class="btn-primary">Enviar Postulación</button>
                 </form>
@@ -77,7 +77,7 @@
                 <h4>Nebulink Store</h4>
                 <a href="sobrenosotros.html">Sobre nosotros</a>
                 <a href="#">Nuestros servicios</a>
-                <a href="trabajaconnosotros.html">Trabaja con nosotros</a>
+                <a href="trabajaconnosotros.php">Trabaja con nosotros</a>
             </div>
             <div>
                 <h4>Contáctanos</h4>

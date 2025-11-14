@@ -14,64 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * Validación del Formulario "Trabaja con Nosotros"
-     * Centraliza las validaciones de campos vacíos y formato numérico para el teléfono.
-     */
-    const contactForm = document.getElementById('contact-form');
-
-    if (contactForm) {
-        contactForm.addEventListener('submit', (event) => {
-            event.preventDefault(); // Previene el envío automático
-            
-            const nombreField = document.getElementById('nombre');
-            const correoField = document.getElementById('correo');
-            const telefonoField = document.getElementById('telefono');
-
-            const nombre = nombreField.value.trim();
-            const correo = correoField.value.trim();
-            const telefono = telefonoField.value.trim();
-
-            // 1. Validar campo Nombre Completo
-            if (nombre === '') {
-                alert('Por favor, ingresa tu Nombre Completo.');
-                nombreField.focus();
-                return; 
-            }
-
-            // 2. Validar campo Correo Electrónico
-            if (correo === '') {
-                alert('Por favor, ingresa tu Correo Electrónico.');
-                correoField.focus();
-                return;
-            }
-            // Opcional: Podrías añadir una validación de formato de email aquí
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(correo)) {
-                alert('Por favor, ingresa un formato de correo electrónico válido.');
-                correoField.focus();
-                return;
-            }
-
-            // 3. Validar campo Teléfono
-            if (telefono === '') {
-                alert('Por favor, ingresa tu Teléfono.');
-                telefonoField.focus();
-                return;
-            }
-            const isNumeric = /^\d+$/.test(telefono); // Expresión regular para validar que solo hay números
-            if (!isNumeric) {
-                alert('El campo de Teléfono solo debe contener números.');
-                telefonoField.focus();
-                return;
-            }
-
-            // Si todas las validaciones pasan:
-            alert('¡Postulación enviada con éxito! Gracias por tu interés.');
-            contactForm.reset();
-        });
-    }
-
-    /**
      * Chatbot con Lógica de Seguimiento
      */
     const chatToggle = document.getElementById('chat-toggle');

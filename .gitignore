@@ -1,6 +1,6 @@
 # Ignorar la carpeta donde se exportan los archivos Excel
 exports/
-
+config_python.php
 
 # Archivos de entorno
 .env

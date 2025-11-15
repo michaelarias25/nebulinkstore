@@ -12,7 +12,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // 3. Validación básica
     if ($nombre === "" || $correo === "" || $telefono === "") {
-        // Puedes redirigir de nuevo con un mensaje, por ahora mostramos texto simple
         echo "Por favor completa todos los campos.";
         exit;
     }
@@ -25,7 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bind_param("sss", $nombre, $correo, $telefono);
 
         if ($stmt->execute()) {
-            // Éxito: puedes mostrar un mensaje o redirigir de vuelta a la página
             echo "
             <script>
                 alert('¡Tu postulación se ha enviado correctamente!');
@@ -44,7 +42,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conexion->close();
 
 } else {
-    // Si alguien entra directamente sin enviar el formulario
     header("Location: trabajaconnosotros.php");
     exit;
 }

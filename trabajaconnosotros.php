@@ -70,6 +70,12 @@
             </div>
         </div>
     </div>
+
+    <div class="text-center" style="margin-bottom: 22px;">
+        <a href="exportar_postulaciones.php" class="btn-primary">
+            Revisar estado de postulación
+        </a>
+    </div>
     
     <footer class="footer">
         <div class="container footer-grid">

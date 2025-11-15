@@ -1,0 +1,42 @@
+# Ignorar la carpeta donde se exportan los archivos Excel
+exports/
+
+# Archivos de entorno
+.env
+*.env
+
+# Archivos temporales o de caché
+*.log
+*.tmp
+*.cache
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Configuración de editores
+.vscode/
+.idea/
+*.swp
+
+# Archivos de Python a ignorar
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Librerías instaladas localmente
+venv/
+env/
+
+# Archivos de XAMPP o temporales de PHP
+*.ini~
+*.bak
+*.sql~
+*.gz
+
+# Node (si llegas a usar alguna dependencia)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

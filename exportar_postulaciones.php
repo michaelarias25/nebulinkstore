@@ -1,7 +1,7 @@
 <?php
 // exportar_postulaciones.php
 
-// Mostrar errores para depurar (puedes quitarlo luego)
+// Mostrar errores para depurar
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -11,7 +11,7 @@ if (isset($_GET['descargar'])) {
 
     // 1. Ejecutar el script de Python que genera el Excel
 
-    // Ruta al ejecutable de Python (AJÚSTALA A TU PC)
+    // Ruta al ejecutable de Python (AJUSTAR)
     $rutaPython = 'C:\Users\jeron\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\python.exe';
 
     // Ruta al script de Python
@@ -20,7 +20,7 @@ if (isset($_GET['descargar'])) {
     // Comando
     $comando = escapeshellcmd($rutaPython . ' ' . $rutaScript);
 
-    // Ejecutar (y capturar salida por si quieres depurar)
+    // Ejecutar
     $salida = shell_exec($comando . ' 2>&1');
     // echo "<pre>$salida</pre>"; // Descomenta para ver errores de Python
 

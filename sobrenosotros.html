@@ -4,26 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre Nosotros - Nebulink Store</title>
+    <!-- Fuente personalizada desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Hoja de estilos principal del sitio -->
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
 
+    <!-- HEADER: Barra de navegación sticky con logo, menú y buscador -->
     <header class="header">
         <div class="container header-inner">
+            <!-- Logo que funciona como enlace a la página principal -->
             <a class="logo" href="index.html">
                 <img src="assets/images/logos/nebulink_store_logo.png" alt="Nebulink Store" />
             </a>
+            
+            <!-- Menú de navegación principal -->
             <nav class="nav">
                 <a href="index.html">Inicio</a>
                 <a href="#">Consolas</a>
                 <a href="#">Videojuegos</a>
             </nav>
+            
+            <!-- Contenedor derecho con buscador y botón de menú móvil -->
             <div class="header-right">
+                <!-- Barra de búsqueda con icono SVG -->
                 <div class="search">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.2-4.2M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" stroke="currentColor" opacity=".8" stroke-width="2" stroke-linecap="round"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 21l-4.2-4.2M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" 
+                              stroke="currentColor" opacity=".8" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
                     <input type="text" placeholder="Buscar…">
                 </div>
+                
+                <!-- Botón hamburguesa para navegación en dispositivos móviles -->
                 <button class="nav-toggle" aria-label="Abrir menú">
                     <span></span><span></span><span></span>
                 </button>
@@ -33,32 +47,51 @@
 
     <main>
         <div class="container">
+            <!-- SECCIÓN HERO SOBRE NOSOTROS: Layout de dos columnas con texto e imagen -->
             <section class="section">
+                <!-- Contenedor con diseño grid para distribución responsiva -->
                 <div class="about-hero">
+                    <!-- Columna izquierda: Contenido textual con la historia de la empresa -->
                     <div class="about-text">
                         <h1 class="section-title" style="text-align: left;">Nuestra Historia</h1>
-                        <p>Nebulink Store nació en 2024 del sueño de un grupo de jóvenes apasionados por los videojuegos. Lo que comenzó en una pequeña habitación llena de consolas antiguas, rápidamente se transformó en la idea de crear una tienda digital que acercara el universo gamer a cualquier rincón del país.</p>
+                        <p>Nebulink Store nació en 2024 del sueño de un grupo de jóvenes apasionados por los videojuegos. 
+                           Lo que comenzó en una pequeña habitación llena de consolas antiguas, rápidamente se transformó 
+                           en la idea de crear una tienda digital que acercara el universo gamer a cualquier rincón del país.</p>
                     </div>
+                    
+                    <!-- Columna derecha: Imagen representativa del ambiente gamer -->
                     <div class="about-image">
-                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071&auto=format&fit=crop" alt="Ambiente Gamer">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071&auto=format&fit=crop" 
+                             alt="Ambiente Gamer">
                     </div>
                 </div>
             </section>
 
+            <!-- SECCIÓN DE VALORES CORPORATIVOS: Misión, Visión y Valores -->
             <section class="section">
                 <h2 class="section-title">Nuestra Esencia</h2>
+                
+                <!-- Grid responsivo de tres columnas que muestra los valores empresariales -->
                 <div class="values-grid-v3">
+                    <!-- Tarjeta 1: Misión de la empresa -->
                     <div class="value-card-v3">
+                        <!-- Icono representativo de la misión -->
                         <img src="assets/images/iconos/diana.png" alt="Misión" class="value-icon-v3">
                         <h3>Misión</h3>
                         <p>Brindar productos de calidad y una atención excepcional a la comunidad gamer en Colombia.</p>
                     </div>
+                    
+                    <!-- Tarjeta 2: Visión a futuro de la empresa -->
                     <div class="value-card-v3">
+                        <!-- Icono representativo de la visión -->
                         <img src="assets/images/iconos/ojo.png" alt="Visión" class="value-icon-v3">
                         <h3>Visión</h3>
                         <p>Convertirnos en la tienda gamer líder en Latinoamérica, reconocida por innovación y confianza.</p>
                     </div>
+                    
+                    <!-- Tarjeta 3: Valores que guían a la empresa -->
                     <div class="value-card-v3">
+                        <!-- Icono representativo de los valores -->
                         <img src="assets/images/iconos/estrella.png" alt="Valores" class="value-icon-v3">
                         <h3>Valores</h3>
                         <p>Pasión, compromiso, innovación y respeto por la comunidad gamer.</p>
@@ -68,16 +101,28 @@
         </div>
     </main>
 
+    <!-- WIDGET DE CHAT: Asistente virtual flotante en la esquina inferior derecha -->
     <div class="chat-widget">
+        <!-- Botón circular flotante que abre el chat -->
         <button id="chat-toggle" class="chat-toggle">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
         </button>
+        
+        <!-- Contenedor del chat (inicialmente oculto, se muestra al hacer clic en el botón) -->
         <div class="chat-container" id="chat-container">
+            <!-- Cabecera del chat con título y botón de cierre -->
             <div class="chat-header">
                 <h3>Asistente Virtual</h3>
                 <button id="chat-close" class="chat-close">&times;</button>
             </div>
+            
+            <!-- Área donde se muestran los mensajes del chat -->
             <div class="chat-body" id="chat-body"></div>
+            
+            <!-- Footer con input para escribir mensajes y botón de envío -->
             <div class="chat-footer">
                 <input type="text" id="chat-input" placeholder="Escribe un mensaje...">
                 <button id="chat-send">Enviar</button>
@@ -85,29 +130,40 @@
         </div>
     </div>
     
+    <!-- FOOTER: Sección inferior con información de contacto y enlaces -->
     <footer class="footer">
         <div class="container footer-grid">
+            <!-- Columna 1: Enlaces a páginas institucionales -->
             <div>
                 <h4>Nebulink Store</h4>
                 <a href="sobrenosotros.html">Sobre nosotros</a>
                 <a href="#">Nuestros servicios</a>
                 <a href="trabajaconnosotros.php">Trabaja con nosotros</a>
             </div>
+            
+            <!-- Columna 2: Datos de contacto de la empresa -->
             <div>
                 <h4>Contáctanos</h4>
                 <p>Tel: +57 3133226068</p>
                 <p>Email: info.nebulink@gmail.com</p>
             </div>
+            
+            <!-- Columna 3: Enlaces a redes sociales -->
             <div>
                 <h4>Síguenos</h4>
                 <div class="redes">
-                    <a href="https://www.facebook.com/share/19xb5fJQ54/" target="_blank"><img src="./assets/images/logos/logo_facebook.png" alt="Facebook Logo"></a>
-                    <a href="https://www.instagram.com/nebulinkstore" target="_blank"><img src="./assets/images/logos/logo_instagram.png" alt="Instagram Logo"></a>
+                    <a href="https://www.facebook.com/share/19xb5fJQ54/" target="_blank">
+                        <img src="./assets/images/logos/logo_facebook.png" alt="Facebook Logo">
+                    </a>
+                    <a href="https://www.instagram.com/nebulinkstore" target="_blank">
+                        <img src="./assets/images/logos/logo_instagram.png" alt="Instagram Logo">
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Script JavaScript que gestiona el menú móvil y la funcionalidad del chatbot -->
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

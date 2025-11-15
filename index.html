@@ -4,26 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nebulink Store V3 - Inicio</title>
+    <!-- Fuente personalizada desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Hoja de estilos principal del sitio -->
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
 
+    <!-- HEADER: Barra de navegación sticky con logo, menú y buscador -->
     <header class="header">
         <div class="container header-inner">
+            <!-- Logo que enlaza a la página principal -->
             <a class="logo" href="index.html">
                 <img src="assets/images/logos/nebulink_store_logo.png" alt="Nebulink Store" />
             </a>
+            
+            <!-- Navegación principal del sitio -->
             <nav class="nav">
                 <a href="index.html">Inicio</a>
                 <a href="#">Consolas</a>
                 <a href="#">Videojuegos</a>
             </nav>
+            
+            <!-- Elementos del lado derecho: buscador y menú hamburguesa -->
             <div class="header-right">
+                <!-- Campo de búsqueda con icono SVG -->
                 <div class="search">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.2-4.2M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" stroke="currentColor" opacity=".8" stroke-width="2" stroke-linecap="round"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 21l-4.2-4.2M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" 
+                              stroke="currentColor" opacity=".8" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
                     <input type="text" placeholder="Buscar…">
                 </div>
+                
+                <!-- Botón hamburguesa para menú móvil (visible solo en pantallas pequeñas) -->
                 <button class="nav-toggle" aria-label="Abrir menú">
                     <span></span><span></span><span></span>
                 </button>
@@ -32,26 +46,35 @@
     </header>
 
     <main>
+        <!-- HERO SECTION: Banner principal con llamado a la acción -->
         <section class="hero-section">
             <div class="hero-content container">
                 <h1>Tu Universo Gamer Comienza Aquí</h1>
                 <p>Las últimas consolas, los mejores videojuegos y accesorios exclusivos.</p>
+                <!-- Botón que hace scroll hacia la sección de productos -->
                 <a href="#productos" class="btn-primary">Explorar Productos</a>
             </div>
         </section>
 
         <div class="container">
+            <!-- SECCIÓN DE PRODUCTOS DESTACADOS -->
             <section id="productos" class="section">
                 <h2 class="section-title">Productos Destacados</h2>
+                
+                <!-- Grid responsivo que muestra las tarjetas de productos -->
                 <div class="products-grid">
+                    <!-- Tarjeta de producto: Xbox Series X -->
                     <article class="product-card">
                         <div class="product-thumb">
                             <img src="assets/images/productos/xbox_series_x.png" alt="Xbox Series X">
                         </div>
                         <h3 class="product-name">Xbox Series X</h3>
                         <p class="product-price">$ 2.999.900</p>
+                        <!-- Botón para agregar producto al carrito (funcionalidad pendiente) -->
                         <button class="btn-secondary">Agregar al Carrito</button>
                     </article>
+                    
+                    <!-- Tarjeta de producto: PlayStation 5 -->
                     <article class="product-card">
                         <div class="product-thumb">
                             <img src="assets/images/productos/ps5_pro.png" alt="PlayStation 5">
@@ -60,6 +83,8 @@
                         <p class="product-price">$ 2.999.900</p>
                         <button class="btn-secondary">Agregar al Carrito</button>
                     </article>
+                    
+                    <!-- Tarjeta de producto: Nintendo Switch -->
                     <article class="product-card">
                         <div class="product-thumb">
                             <img src="assets/images/productos/nintendo_switch.png" alt="Nintendo Switch">
@@ -68,6 +93,8 @@
                         <p class="product-price">$ 2.499.900</p>
                         <button class="btn-secondary">Agregar al Carrito</button>
                     </article>
+                    
+                    <!-- Tarjeta de producto: PlayStation 4 Pro -->
                     <article class="product-card">
                         <div class="product-thumb">
                             <img src="assets/images/productos/ps4_pro.png" alt="PlayStation 4 Pro">
@@ -79,21 +106,27 @@
                 </div>
             </section>
 
+            <!-- SECCIÓN DE CATEGORÍAS: Tarjetas visuales por marca -->
             <section class="section">
                 <h2 class="section-title">Explora por Categoría</h2>
                 <div class="categories-grid-v3">
+                    <!-- Tarjeta de categoría Xbox con gradiente verde -->
                     <a class="category-card-v3 xbox" href="#">
                         <div class="category-overlay-v3">
                             <img class="category-logo" src="assets/images/logos/xbox_logo.png" alt="Xbox Logo">
                             <span>Ver Catálogo</span>
                         </div>
                     </a>
+                    
+                    <!-- Tarjeta de categoría PlayStation con gradiente azul -->
                     <a class="category-card-v3 playstation" href="#">
                         <div class="category-overlay-v3">
                             <img class="category-logo" src="assets/images/logos/playstation_logo.png" alt="PlayStation Logo">
                             <span>Ver Catálogo</span>
                         </div>
                     </a>
+                    
+                    <!-- Tarjeta de categoría Nintendo con gradiente rojo -->
                     <a class="category-card-v3 nintendo" href="#">
                         <div class="category-overlay-v3">
                             <img class="category-logo" src="assets/images/logos/nintendo_logo.png" alt="Nintendo Logo">
@@ -105,16 +138,28 @@
         </div>
     </main>
 
+    <!-- WIDGET DE CHAT: Asistente virtual flotante -->
     <div class="chat-widget">
+        <!-- Botón flotante para abrir el chat -->
         <button id="chat-toggle" class="chat-toggle">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
         </button>
+        
+        <!-- Contenedor del chat (oculto por defecto) -->
         <div class="chat-container" id="chat-container">
+            <!-- Cabecera del chat con título y botón de cierre -->
             <div class="chat-header">
                 <h3>Asistente Virtual</h3>
                 <button id="chat-close" class="chat-close">&times;</button>
             </div>
+            
+            <!-- Cuerpo del chat donde aparecen los mensajes -->
             <div class="chat-body" id="chat-body"></div>
+            
+            <!-- Footer del chat con input y botón de envío -->
             <div class="chat-footer">
                 <input type="text" id="chat-input" placeholder="Escribe un mensaje...">
                 <button id="chat-send">Enviar</button>
@@ -122,29 +167,40 @@
         </div>
     </div>
 
+    <!-- FOOTER: Información de contacto y enlaces importantes -->
     <footer class="footer">
         <div class="container footer-grid">
+            <!-- Columna 1: Enlaces internos -->
             <div>
                 <h4>Nebulink Store</h4>
                 <a href="sobrenosotros.html">Sobre nosotros</a>
                 <a href="#">Nuestros servicios</a>
                 <a href="trabajaconnosotros.php">Trabaja con nosotros</a>
             </div>
+            
+            <!-- Columna 2: Información de contacto -->
             <div>
                 <h4>Contáctanos</h4>
                 <p>Tel: +57 3133226068</p>
                 <p>Email: info.nebulink@gmail.com</p>
             </div>
+            
+            <!-- Columna 3: Redes sociales -->
             <div>
                 <h4>Síguenos</h4>
                 <div class="redes">
-                    <a href="https://www.facebook.com/share/19xb5fJQ54/" target="_blank"><img src="./assets/images/logos/logo_facebook.png" alt="Facebook Logo"></a>
-                    <a href="https://www.instagram.com/nebulinkstore" target="_blank"><img src="./assets/images/logos/logo_instagram.png" alt="Instagram Logo"></a>
+                    <a href="https://www.facebook.com/share/19xb5fJQ54/" target="_blank">
+                        <img src="./assets/images/logos/logo_facebook.png" alt="Facebook Logo">
+                    </a>
+                    <a href="https://www.instagram.com/nebulinkstore" target="_blank">
+                        <img src="./assets/images/logos/logo_instagram.png" alt="Instagram Logo">
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Script principal que maneja la interactividad del sitio (menú móvil y chatbot) -->
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

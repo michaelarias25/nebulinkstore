@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trabaja con Nosotros - Nebulink Store</title>
+    <!-- Fuente personalizada desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Hoja de estilos principal del sitio -->
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
 
+    <!-- HEADER: Barra de navegación sticky -->
     <header class="header">
         <div class="container header-inner">
             <a class="logo" href="index.html">
@@ -21,7 +24,10 @@
             </nav>
             <div class="header-right">
                 <div class="search">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.2-4.2M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" stroke="currentColor" opacity=".8" stroke-width="2" stroke-linecap="round"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 21l-4.2-4.2M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" 
+                              stroke="currentColor" opacity=".8" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
                     <input type="text" placeholder="Buscar…">
                 </div>
                 <button class="nav-toggle" aria-label="Abrir menú">
@@ -33,30 +39,47 @@
 
     <main>
         <div class="container">
+            <!-- SECCIÓN DE POSTULACIÓN: Formulario para aplicar a trabajos -->
             <section class="section">
                 <div class="text-center">
                     <h1>Únete a Nuestro Equipo</h1>
                     <p class="subtitle">Buscamos personas apasionadas por el mundo gamer.</p>
                 </div>
+                
+                <!-- FORMULARIO DE POSTULACIÓN
+                     - method="POST": Los datos se envían de forma segura (no aparecen en la URL)
+                     - action="guardar_postulacion.php": Archivo PHP que procesa y guarda los datos en MySQL
+                -->
                 <form id="contact-form" class="form-v3" action="guardar_postulacion.php" method="POST">
+                    <!-- Campo de nombre completo -->
                     <div class="form-field">
                         <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required>
                     </div>
+                    
+                    <!-- Campo de correo electrónico con validación HTML5 -->
                     <div class="form-field">
                         <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required>
                     </div>
+                    
+                    <!-- Campo de teléfono -->
                     <div class="form-field">
                         <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
                     </div>
+                    
+                    <!-- Botón que envía el formulario a guardar_postulacion.php -->
                     <button type="submit" class="btn-primary">Enviar Postulación</button>
                 </form>
             </section>
         </div>
     </main>
     
+    <!-- WIDGET DE CHAT: Asistente virtual disponible en todas las páginas -->
     <div class="chat-widget">
         <button id="chat-toggle" class="chat-toggle">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
         </button>
         <div class="chat-container" id="chat-container">
             <div class="chat-header">
@@ -71,12 +94,15 @@
         </div>
     </div>
 
+    <!-- ENLACE DE ADMINISTRACIÓN: Permite revisar las postulaciones guardadas
+         Redirige a exportar_postulaciones.php que genera un Excel con los datos -->
     <div class="text-center" style="margin-bottom: 22px;">
         <a href="exportar_postulaciones.php" class="btn-primary">
             Revisar estado de postulación
         </a>
     </div>
     
+    <!-- FOOTER: Información de contacto y enlaces -->
     <footer class="footer">
         <div class="container footer-grid">
             <div>
@@ -93,13 +119,18 @@
             <div>
                 <h4>Síguenos</h4>
                 <div class="redes">
-                    <a href="https://www.facebook.com/share/19xb5fJQ54/" target="_blank"><img src="./assets/images/logos/logo_facebook.png" alt="Facebook Logo"></a>
-                    <a href="https://www.instagram.com/nebulinkstore" target="_blank"><img src="./assets/images/logos/logo_instagram.png" alt="Instagram Logo"></a>
+                    <a href="https://www.facebook.com/share/19xb5fJQ54/" target="_blank">
+                        <img src="./assets/images/logos/logo_facebook.png" alt="Facebook Logo">
+                    </a>
+                    <a href="https://www.instagram.com/nebulinkstore" target="_blank">
+                        <img src="./assets/images/logos/logo_instagram.png" alt="Instagram Logo">
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Script principal que maneja la interactividad -->
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

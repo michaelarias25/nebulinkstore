@@ -1,6 +1,7 @@
 # Ignorar la carpeta donde se exportan los archivos Excel
 exports/
 
+
 # Archivos de entorno
 .env
 *.env

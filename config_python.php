@@ -4,5 +4,8 @@
 // Ruta al ejecutable de Python
 $PYTHON_PATH = '';
 
+// correr pip install mysql-connector-python openpyxl
+
+
 // Ruta absoluta a la carpeta donde están los scripts Python
 $PYTHON_SCRIPTS = __DIR__ . '\\python\\';

@@ -1,4 +1,5 @@
 <?php
+require_once "config_python.php";
 // exportar_postulaciones.php
 
 // Mostrar errores para depurar
@@ -12,10 +13,8 @@ if (isset($_GET['descargar'])) {
     // 1. Ejecutar el script de Python que genera el Excel
 
     // Ruta al ejecutable de Python (AJUSTAR)
-    $rutaPython = 'C:\Users\jeron\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\python.exe';
-
-    // Ruta al script de Python
-    $rutaScript = 'C:\\xampp\\htdocs\\nebulinkstore\\python\\exportar_postulaciones_excel.py';
+    $rutaPython = $PYTHON_PATH;
+    $rutaScript = $PYTHON_SCRIPTS . 'exportar_postulaciones_excel.py';
 
     // Comando
     $comando = escapeshellcmd($rutaPython . ' ' . $rutaScript);
